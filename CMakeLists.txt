@@ -4,7 +4,7 @@ project(lab1_)
 set(CMAKE_CXX_STANDARD 14)
 
 add_library(
-        lab1_shared
+        lab1_shared SHARED
         library.h
         library.cpp)
 
