@@ -18,6 +18,8 @@ private:
     void *dylib;
 
     void (*say_hello)();
+
+    void load_method();
 };
 
 
