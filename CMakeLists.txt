@@ -8,6 +8,6 @@ add_library(
         library.h
         library.cpp)
 
-add_executable(lab1 main.cpp )
+add_executable(lab1 main.cpp Host.cpp Host.h)
 
 #target_link_libraries(lab1 PUBLIC lab1_shared)
