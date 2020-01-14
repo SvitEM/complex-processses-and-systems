@@ -2,7 +2,13 @@
 #define LAB1_SHARED_LIBRARY_H
 
 
-extern "C"
-void say_hello();
+#include <map>
 
+using namespace std;
+
+extern "C"
+void method(double , double, double, double, double,
+            map<double, double>*);
+
+double temp_f(double, double, double);
 #endif //LAB1_SHARED_LIBRARY_H

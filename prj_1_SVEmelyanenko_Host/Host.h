@@ -5,6 +5,9 @@
 #ifndef LAB1__HOST_H
 #define LAB1__HOST_H
 
+#include <map>
+
+using namespace std;
 
 class Host {
 public:
@@ -12,14 +15,21 @@ public:
 
     ~Host();
 
-    void say();
+    void load_method();
+
+    void run_method();
 
 private:
+    double T0, T1, h, g, endTime = -1;
+
     void *dylib;
 
-    void (*say_hello)();
+    void (*method)(double, double, double, double, double, map<double, double>*);
 
-    void load_method();
+    void input_values();
+
+    void write(map<double, double>, char*);
+
 };
 
 
