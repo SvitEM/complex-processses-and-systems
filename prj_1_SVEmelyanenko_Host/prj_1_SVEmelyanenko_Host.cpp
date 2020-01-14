@@ -15,6 +15,8 @@ using namespace std;
 
 int main(int argc, const char *argv[]) {
     Host A;
-    A.say();
+
+    A.run_method();
+
     return 0;
 }
