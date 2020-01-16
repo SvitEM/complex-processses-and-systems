@@ -26,12 +26,17 @@ Host::~Host() {
 
 void Host::input_values() {
     std::cout << "T0 T1 h g end_time" << std::endl;
+//    T0 = 40;
+//    T1 = 15;
+//    h = 10;
+//    g = 0.1;
+//    endTime = 120;
     std::cin >> T0 >> T1 >> h >> g >> endTime;
 }
 
-void Host::write(map<double, double> results, char* name) {
+void Host::write(map<double, double> results, char *filename) {
     ofstream outFile;
-    outFile.open(name);
+    outFile.open(filename);
     for (auto & result : results) {
         outFile << result.first << "\t" << result.second << endl;
     }
